@@ -1,4 +1,4 @@
-# Webpack + SCSS Framework
+# React Webpack + SCSS Framework
 
 ## Getting Started
 
