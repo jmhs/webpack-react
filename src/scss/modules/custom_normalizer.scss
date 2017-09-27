@@ -1,0 +1,34 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+
+	position: relative;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+input[type='tel'] {
+	-moz-appearance:textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+input[type="submit"] {
+	appearance: none;
+	border-radius: 0;
+}
+
+section {
+	position: relative;
+}
