@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "NODE_ENV=development webpack-dev-server --hot --inline",
     "build": "NODE_ENV=development webpack-dashboard webpack-dev-server --hot --inline",
     "build:prod": "NODE_ENV=production webpack"
   },
@@ -35,6 +36,9 @@
     "webpack-dev-server": "^2.8.2"
   },
   "dependencies": {
-    "react-router-dom": "^4.2.2"
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-router-dom": "^4.2.2",
+    "react-svg": "^2.1.22"
   }
 }
