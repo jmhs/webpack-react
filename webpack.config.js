@@ -11,8 +11,13 @@ const 	ExtractTextPlugin = require('extract-text-webpack-plugin'),
 		DashboardPlugin = require('webpack-dashboard/plugin')
 
 
-		// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin; // * Webpack Bundle Analyzer
 
+
+
+/*-----------------------------------------------------------------------------*/ 
+// Webpack Bundle Analyzer *** UNCOMMENT THIS SECTION
+// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+/*------------------------------------------------------------------------------*/ 
 
 console.log("============================================================================")
 console.log("   Compling for: " + process.env.NODE_ENV.toUpperCase())
@@ -69,9 +74,10 @@ console.log("===================================================================
 			allChunks: true,
 		}),
 	
-	//- Webpack Bundle Analyzer
-	//-----------------------------------------------------------------------
-	// new BundleAnalyzerPlugin(), // * Webpack Bundle Analyzer
+	/*---------------------------------------------------------------------*/ 
+	// Webpack Bundle Analyzer *** UNCOMMENT THIS SECTION
+		// new BundleAnalyzerPlugin(),
+	/*---------------------------------------------------------------------*/ 
 
 	//- Copies individual files or entire directories to DIST without bundling
 	//-----------------------------------------------------------------------
