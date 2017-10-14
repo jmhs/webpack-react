@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "NODE_ENV=development webpack-dashboard webpack-dev-server --hot --inline",
+    "build": "NODE_ENV=development webpack-dashboard -t webpack-react webpack-dev-server --hot --inline",
     "build:prod": "NODE_ENV=production webpack"
   },
   "author": "WKLSH",
