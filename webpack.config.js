@@ -7,7 +7,8 @@ const 	ExtractTextPlugin = require('extract-text-webpack-plugin'),
 		CleanWebpackPlugin = require('clean-webpack-plugin'),
 		ImageminPlugin = require('imagemin-webpack-plugin').default,
 		imageminJpegRecompress = require('imagemin-jpeg-recompress'),
-		HtmlWebpackPlugin = require('html-webpack-plugin')
+		HtmlWebpackPlugin = require('html-webpack-plugin'),
+		DashboardPlugin = require('webpack-dashboard/plugin')
 
 
 		// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin; // * Webpack Bundle Analyzer
@@ -31,6 +32,10 @@ console.log("===================================================================
 	      logo: path.resolve("./img/favicon.png"),
 	      suppressSuccess: true
 	    }),
+
+	//- Webpack Dashboard
+	//-----------------------------------------------------------------------
+		new DashboardPlugin(),
 
 	//- Expose Dev/Prod Enviroment to JS
 	//-----------------------------------------------------------------------
