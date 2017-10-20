@@ -6,7 +6,9 @@ export default class MainServices extends React.Component {
   }
 
   render() {
-    return (<div>MainServices Component</div>);
+    return (
+      <div>MainServices Component</div>
+    );
   }
 }
 
