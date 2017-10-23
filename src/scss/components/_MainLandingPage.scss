@@ -1,7 +1,7 @@
-@font-face {
-  font-family: "NeueEinBold";
-  src: url("../Assets/font/hinted-NeueEinstellung-Bold.woff") format('woff');
-}
+// @font-face {
+// //   font-family: "NeueEinBold";
+// //   src: url("../Assets/font/hinted-NeueEinstellung-Bold.woff") format('woff');
+// // }
 
 .Container{
   height: 100vh;
@@ -26,15 +26,13 @@
     position: relative;
     overflow: hidden;
     .img {
-      // position: absolute;
-       max-width: 40px;
-       max-height: 60px;
-      // align-content: center;
+      margin: 0;
       position: absolute;
       top: 50%;
       left: 50%;
-
+      transform: translate(-50%, -50%);
     }
+
     .MainText {
       position: absolute;
       align-content: left;
