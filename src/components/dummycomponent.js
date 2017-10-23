@@ -14,7 +14,7 @@ export default class Dummcomponent extends React.Component {
           <div className="contenttitlemain">Coach</div>
           <div className="contenttext" id="fontstuff">
             With the experience of launching
-            over 300 mobile apps, get practical
+            over 300 mobile apps, practical
             knowledge with Codigo School.
           </div>
           <p>

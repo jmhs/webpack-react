@@ -1,0 +1,51 @@
+.Container{
+  height: 100vh;
+  width:100vw;
+
+  display: grid;
+  grid-template-columns: 50% 50% ;
+  grid-template-rows: 50% 50%;
+  grid-template-areas:
+  "DivLeft DivRightTop"
+  "DivLeft DivRightBottom";
+
+
+  background-color: blue;
+
+  .DivLeft{
+    grid-area: DivLeft;
+    background-color: orange;
+  }
+  .DivRightTop {
+    // grid-column-start: 2;
+    // grid-column-end:3;
+    // grid-row-start:1;
+    // grid-row-end:2;
+    grid-area: DivRightTop;
+
+    background-color: red;
+
+  }
+  .DivRightBottom {
+    // grid-column-start: 2;
+    // grid-column-end:3;
+    // grid-row-start:2;
+    // grid-row-end:3;
+    grid-area: DivRightBottom;
+
+    background-color: red;
+
+}
+
+}
+
+
+
+@media screen and (min-width:736px){
+  display: grid;
+  grid-template-columns:5px 40% auto 5px;
+  grid-template-rows: 50% 50%;
+  grid-template-areas:
+  ". DivLeft DivRightTop ."
+  "DivLeft DivRightBottom";
+}
