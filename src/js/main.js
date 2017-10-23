@@ -12,10 +12,17 @@ require('../scss/bundle-scss.scss') // SCSS IMPORT
 import App from '../components/App';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {Provider} from 'react-redux';
+import {initStore} from '../Store/Store.js'
 
+const storeAndHistory = initStore();
+export const store = storeAndHistory[0];
+export const history = storeAndHistory[1];
 
 
 ReactDOM.render(
-	<App />,
+	//<Provider store={store}>
+	<App/>,
+	//</Provider>,
 	document.getElementById('root')
 );

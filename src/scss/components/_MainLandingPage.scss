@@ -1,20 +1,65 @@
+@font-face {
+  font-family: "NeueEinBold";
+  src: url("../Assets/font/hinted-NeueEinstellung-Bold.woff") format('woff');
+}
+
 .Container{
   height: 100vh;
   width:100vw;
-
   display: grid;
-  grid-template-columns: 50% 50% ;
+  grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
   grid-template-areas:
   "DivLeft DivRightTop"
   "DivLeft DivRightBottom";
+  grid-gap: 5px;
+  padding: 10px;
 
-
-  background-color: blue;
+  background-color: white;
 
   .DivLeft{
     grid-area: DivLeft;
-    background-color: orange;
+    display: block;
+    background:radial-gradient(#eb5d5b, #af3131);
+    text-align: left;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    .img {
+      // position: absolute;
+       max-width: 40px;
+       max-height: 60px;
+      // align-content: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+    }
+    .MainText {
+      position: absolute;
+      align-content: left;
+
+    .MainTitle {
+      font-size: 36pt;
+      line-height: 1.8em;
+      font-family: sans-serif ;
+      color:white
+      }
+    .contenttext {
+      font-size: 18pt;
+      width: 305px;
+      line-height: 22px;
+      font-family: sans-serif;
+      color:white
+    }
+    .p{
+    font-size: 18pt;
+    width: 305px;
+    line-height: 22px;
+    font-family: sans-serif;
+    color:white
+    }
+}
   }
   .DivRightTop {
     // grid-column-start: 2;
@@ -23,7 +68,8 @@
     // grid-row-end:2;
     grid-area: DivRightTop;
 
-    background-color: red;
+    background:radial-gradient(#629dec, #347ee0)
+
 
   }
   .DivRightBottom {
@@ -33,19 +79,19 @@
     // grid-row-end:3;
     grid-area: DivRightBottom;
 
-    background-color: red;
+    background:radial-gradient(#fdd75e, #ffb400);
 
-}
+  }
 
 }
 
 
 
 @media screen and (min-width:736px){
-  display: grid;
-  grid-template-columns:5px 40% auto 5px;
-  grid-template-rows: 50% 50%;
-  grid-template-areas:
-  ". DivLeft DivRightTop ."
-  "DivLeft DivRightBottom";
+  // display: grid;
+  // grid-template-columns:5px 40% auto 5px;
+  // grid-template-rows: 50% 50%;
+  // grid-template-areas:
+  // ". DivLeft DivRightTop ."
+  // "DivLeft DivRightBottom";
 }
