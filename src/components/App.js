@@ -20,12 +20,16 @@ class App extends Component {
   render() {
     return (
       <Router>
+      <Route render={({location, history, match}) => {
+        return (
           <Switch key={location.key} location={location}>
-            <Route path="/" component={MainLandingPage}/>
-            <Route path="/coincubate" component={MainCoIncubate}/>
-            <Route path="/masterclass" component={MainMasterclass}/>
-            <Route path="/services" component={Dummcomponent}/>
+            <Route exact path="/" component={MainLandingPage}/>
+            <Route exact path="/coincubate" component={MainCoIncubate}/>
+            <Route exact path="/masterclass" component={MainMasterclass}/>
+            <Route exact path="/services" component={Dummcomponent}/>
           </Switch>
+                    );
+                }}/>
       </Router>
 
     );

@@ -21,8 +21,8 @@ export const history = storeAndHistory[1];
 
 
 ReactDOM.render(
-	//<Provider store={store}>
-	<App/>,
-	//</Provider>,
+<Provider store={store}>
+	<App/>
+	</Provider>,
 	document.getElementById('root')
 );
