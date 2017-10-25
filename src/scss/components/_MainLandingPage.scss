@@ -5,7 +5,11 @@
 $LightRed : #eb5d5b;
 $MainRed: #af3131;
 
+$LightBlue:#629dec;
+$MainBlue:#347ee0;
 
+$LightYellow:#fdd75e;
+$MainYellow:#ffb400;
 
 .Container{
   height: 100vh;
@@ -21,34 +25,22 @@ $MainRed: #af3131;
   padding: 10px;
   overflow: hidden;
   background-color: white;
-  .NavBar{
+  NavBar{
     grid-area: NavBar
   }
   .DivLeft{
     display: flex;
     grid-area: DivLeft;
-
-    //
-    // display: grid;
-    // grid-template-columns: 50% 50%;
-    // grid-template-rows: 50% 50%;
-    // grid-template-areas:
-    // "."
-    // "DivLeft DivRightBottom";
-
-
     background:radial-gradient($LightRed, $MainRed);
-    text-align: left;
     position: relative;
     overflow: hidden;
-    .img {
+    img {
       position: absolute;
-      width: 100px;
-      height: 100px;
+      max-width: 100%;
+      max-height: 100%;
       // margin: 0 auto;
       justify-self: center;
       align-self: center;
-
     }
 
     .MainText {
@@ -69,7 +61,7 @@ $MainRed: #af3131;
       font-family: sans-serif;
       color:white
     }
-    .p{
+    p{
     font-size: 18pt;
     width: 305px;
     line-height: 22px;
@@ -77,38 +69,175 @@ $MainRed: #af3131;
     color:white
     }
 }
-  }
+  };
   .DivRightTop {
+    display: flex;
     // grid-column-start: 2;
     // grid-column-end:3;
     // grid-row-start:1;
     // grid-row-end:2;
     grid-area: DivRightTop;
     position: relative;
-    background:radial-gradient(#629dec, #347ee0)
+    background:radial-gradient($LightBlue,$MainBlue);
+    justify-content: center;
+    align-content: center;
+    & img {
+      position: absolute;
+      max-width: 80%;
+      max-height: 80%;
+      margin: 20% 20%;
+    }
 
 
   }
   .DivRightBottom {
+    display: flex;
     // grid-column-start: 2;
     // grid-column-end:3;
     // grid-row-start:2;
     // grid-row-end:3;
     position: relative;
     grid-area: DivRightBottom;
+    justify-content: center;
+    align-content: center;
 
-    background:radial-gradient(#fdd75e, #ffb400);
+    background:radial-gradient($LightYellow,$MainYellow);
+    img{
+      position: absolute;
+      max-width: 80%;
+      max-height: 80%;
+      margin: 0 auto;
+      // justify-self: center;
+      // align-self: center;
+
+
+    }
 
   }
 
 }
 
 
-@media screen and (min-width:736px){
-  // display: grid;
-  // grid-template-columns:5px 40% auto 5px;
-  // grid-template-rows: 50% 50%;
-  // grid-template-areas:
-  // ". DivLeft DivRightTop ."
-  // "DivLeft DivRightBottom";
+@media screen and (max-width:736px){
+
+
+
+  $LightRed : #eb5d5b;
+  $MainRed: #af3131;
+
+  $LightBlue:#629dec;
+  $MainBlue:#347ee0;
+
+  $LightYellow:#fdd75e;
+  $MainYellow:#ffb400;
+
+  .Container{
+    height: 100vh;
+    width:100vw;
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows: 50vh 50vh 50vh;
+    grid-template-areas:
+    "DivLeft "
+    "DivRightTop"
+    "DivRightBottom";
+    grid-gap: 5px;
+    padding: 10px;
+    overflow: scroll;
+    background-color: white;
+    justify-content: center;
+
+
+
+    NavBar{
+      grid-area: NavBar
+    }
+    .DivLeft{
+      display: flex;
+      grid-area: DivLeft;
+      background:radial-gradient($LightRed, $MainRed);
+      position: relative;
+      overflow: hidden;
+      img {
+        position: absolute;
+        max-width: 100%;
+        max-height: 100%;
+        // margin: 0 auto;
+        justify-self: center;
+        align-self: center;
+      }
+
+      .MainText {
+        position: absolute;
+        justify-self: center;
+        align-self: center;
+
+      .MainTitle {
+        font-size: 36pt;
+        line-height: 1.8em;
+        font-family: sans-serif ;
+        color:white
+        }
+      .contenttext {
+        font-size: 18pt;
+        width: 305px;
+        line-height: 22px;
+        font-family: sans-serif;
+        color:white
+      }
+      p{
+      font-size: 18pt;
+      width: 305px;
+      line-height: 22px;
+      font-family: sans-serif;
+      color:white
+      }
+  }
+    };
+    .DivRightTop {
+      display: flex;
+      // grid-column-start: 2;
+      // grid-column-end:3;
+      // grid-row-start:1;
+      // grid-row-end:2;
+      grid-area: DivRightTop;
+      position: relative;
+      background:radial-gradient($LightBlue,$MainBlue);
+      justify-content: center;
+      align-content: center;
+      & img {
+        position: absolute;
+        max-width: 80%;
+        max-height: 80%;
+
+      }
+
+
+    }
+    .DivRightBottom {
+      display: flex;
+      // grid-column-start: 2;
+      // grid-column-end:3;
+      // grid-row-start:2;
+      // grid-row-end:3;
+      position: relative;
+      grid-area: DivRightBottom;
+      justify-content: center;
+      align-content: center;
+
+      background:radial-gradient($LightYellow,$MainYellow);
+      img{
+        position: absolute;
+        max-width: 80%;
+        max-height: 80%;
+        margin: 0 auto;
+        // justify-self: center;
+        // align-self: center;
+
+
+      }
+
+    }
+
+  }
 }

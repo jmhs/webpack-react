@@ -14,19 +14,18 @@ class MainLandingPage extends React.Component {
 
     }
   }
-
+  // <div className="NavBar">
+  //   <nav>
+  //     <ul>
+  //       <li><Link to='/'>Home</Link></li>
+  //       <li><Link to='/coincubate'>Roster</Link></li>
+  //       <li><Link to='/schedule'>Schedule</Link></li>
+  //     </ul>
+  //   </nav>
+  // </div>
   render() {
     return (
   <div className = "Container">
-    <div className="NavBar">
-      <nav>
-        <ul>
-          <li><Link to='/'>Home</Link></li>
-          <li><Link to='/coincubate'>Roster</Link></li>
-          <li><Link to='/schedule'>Schedule</Link></li>
-        </ul>
-      </nav>
-    </div>
         <div className="DivLeft">
           <img src="../Assets/phone.png" />
           <div className="MainText">
@@ -43,12 +42,12 @@ class MainLandingPage extends React.Component {
             </p>
             </div>
           </div>
-      </div>
-      <div className = "DivRightTop">
-      </div>
-
+        </div>
+        <div className = "DivRightTop">
+        <img src="../Assets/egg.png" />
+        </div>
       <div className="DivRightBottom">
-      right bottom
+      <img src="../Assets/coach2x.png" />
       </div>
     </div>
     );
