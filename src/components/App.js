@@ -12,7 +12,7 @@ import MainLandingPage from "./MainLandingPage.js"
 import MainCoIncubate from "./MainCoIncubate.js"
 import MainMasterclass from "./MainMasterclass.js"
 import MainServices from "./MainServices.js"
-
+import NavBar from "./Navbar.js"
 
 
 

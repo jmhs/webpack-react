@@ -7,6 +7,7 @@ import {Link} from 'react-router-dom';
 
 
 
+
 class MainLandingPage extends React.Component {
   constructor(props) {
     super(props);
@@ -14,15 +15,6 @@ class MainLandingPage extends React.Component {
 
     }
   }
-  // <div className="NavBar">
-  //   <nav>
-  //     <ul>
-  //       <li><Link to='/'>Home</Link></li>
-  //       <li><Link to='/coincubate'>Roster</Link></li>
-  //       <li><Link to='/schedule'>Schedule</Link></li>
-  //     </ul>
-  //   </nav>
-  // </div>
   render() {
     return (
   <div className = "Container">
@@ -49,7 +41,20 @@ class MainLandingPage extends React.Component {
       <div className="DivRightBottom">
       <img src="../Assets/coach2x.png" />
       </div>
+
+      <div className="testWrapper">
+        <div className="blockTest"></div>
+        <div className="testElement">link 1</div>
+        <div className="testElement">link 2</div>
+        <div className="testElement">link 3</div>
+        <div className="testElement">link 4</div>
+        <div className="testElement">link 5</div>
+        <div className="testElement">link 6 </div>
+      </div>
+
     </div>
+
+
     );
   }
 }
