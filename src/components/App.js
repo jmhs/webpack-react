@@ -13,6 +13,7 @@ import MainCoIncubate from "./MainCoIncubate.js"
 import MainMasterclass from "./MainMasterclass.js"
 import MainServices from "./MainServices.js"
 import NavBar from "./Navbar.js"
+import MainWork from "./MainWork.js"
 
 
 
@@ -23,7 +24,7 @@ class App extends Component {
       <Route render={({location, history, match}) => {
         return (
           <Switch key={location.key} location={location}>
-            <Route exact path="/" component={MainLandingPage}/>
+            <Route exact path="/" component={MainWork}/>
             <Route exact path="/coincubate" component={MainCoIncubate}/>
             <Route exact path="/masterclass" component={MainMasterclass}/>
             <Route exact path="/services" component={Dummcomponent}/>

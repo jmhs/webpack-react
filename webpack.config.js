@@ -164,6 +164,20 @@ console.log("===================================================================
 				test: /\.js$/,
 				exclude: /node_modules/,
                 loader: 'babel-loader',
+								query: {
+										"presets": [
+										 "react",
+										 "env",
+											"es2015",
+											"stage-2"
+										],
+										"plugins": [
+											"transform-react-jsx-img-import",
+											"transform-class-properties",
+											"transform-flow-strip-types"
+										]
+
+                 }
                 // Running off .babelrc
 			},
 			{
@@ -171,9 +185,19 @@ console.log("===================================================================
 				 loader: 'babel-loader',
 				 exclude: /node_modules/,
 				 query: {
-					 cacheDirectory: true,
-					 presets: ['react', 'es2015']
-				 }
+						 "presets": [
+							"react",
+							"env",
+							 "es2015",
+							 "stage-2"
+						 ],
+						 "plugins": [
+							 "transform-react-jsx-img-import",
+							 "transform-class-properties",
+							 "transform-flow-strip-types"
+						 ]
+
+					}
 			 },
 			{
                 test: /\.scss$/,

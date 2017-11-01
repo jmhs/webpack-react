@@ -22,7 +22,7 @@ class MainLandingPage extends React.Component {
           <img src="../Assets/phone.png" />
           <div className="MainText">
             <div className="MainTitle">
-            <Link to='/coincubate'><h2>Codigo</h2></Link>
+            <h2>Codigo</h2>
             </div>
             <div className="contenttext">
             <h3>We create awesome brand
@@ -36,25 +36,39 @@ class MainLandingPage extends React.Component {
           </div>
         </div>
         <div className = "DivRightTop">
-        <img src="../Assets/egg.png" />
+        <img src="../Assets/coach2x.png"/>
+        <div className="MainText">
+          <div className="MainTitle">
+          <h2>Coach</h2>
+          </div>
+          <div className="contenttext">
+          <h3>With experience of launching over 300 mobile apps
+          get practical knowledge with Codigo school
+          </h3>
+          <p>
+          View courses ➞
+          </p>
+          </div>
+        </div>
         </div>
       <div className="DivRightBottom">
-      <img src="../Assets/coach2x.png" />
+      <img src="../Assets/egg.png" />
+      <div className="MainText">
+        <div className="MainTitle">
+        <h2>Co-incubate</h2>
+        </div>
+        <div className="contenttext">
+        <h3>Have a great app idea?
+        <br/>
+        We are your trusted partner
+        </h3>
+        <p>
+        Co-incubate with us ➞
+        </p>
+        </div>
       </div>
-
-      <div className="testWrapper">
-        <div className="blockTest"></div>
-        <div className="testElement">link 1</div>
-        <div className="testElement">link 2</div>
-        <div className="testElement">link 3</div>
-        <div className="testElement">link 4</div>
-        <div className="testElement">link 5</div>
-        <div className="testElement">link 6 </div>
       </div>
-
     </div>
-
-
     );
   }
 }

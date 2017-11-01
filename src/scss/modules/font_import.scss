@@ -1,11 +1,83 @@
 /*--------------------------------------------------------------------------------------
- Font face import example - 
- [test] font is housed under Project/src/scss/webfonts/fontfile.ext
+ Font face import example -
+ [test] font is housed under Project/src/webfonts/fontfile.ext
  --------------------------------------------------------------------------------------*/
 	// @font-face {
 	// 	font-family: 'test';
-	// 	src: url('../scss/webfonts/test.eot');
-	// 	src: url('../scss/webfonts/test.woff') format('woff'),
-	// 	url('../scss/webfonts/test.eot') format('embedded-opentype'),
-	// 	url('../scss/webfonts/test.ttf') format('truetype');
+	// 	src: url('../../Assets/webfonts/test.eot');
+	// 	src: url('../../Assets/webfonts/test.woff') format('woff'),
+	// 	url('../../Assets/webfonts/test.eot') format('embedded-opentype'),
+	// 	url('../../Assets/webfonts/test.ttf') format('truetype');
 	// }
+
+	@font-face {
+		font-family: 'Neue Einstellung-Thin';
+		src: url('../../Assets/webfonts/NeueEinstellung-Thin.eot');
+		src: url('../../Assets/webfonts/NeueEinstellung-Thin.eot?#iefix') format('embedded-opentype'),
+		url('../../Assets/webfonts/NeueEinstellung-Thin.woff') format('woff'),
+		url('../../Assets/webfonts/NeueEinstellung-Thin.ttf') format('truetype');
+
+	}
+
+	@font-face {
+		font-family: 'Neue Einstellung-Medium';
+		src: url('../../Assets/webfonts/NeueEinstellung-Medium.eot');
+		src: url('../../Assets/webfonts/NeueEinstellung-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../../Assets/webfonts/NeueEinstellung-Medium.woff') format('woff'),
+		url('../../Assets/webfonts/NeueEinstellung-Medium.ttf') format('truetype');
+
+	}
+
+	@font-face {
+		font-family: 'Neue Einstellung-Bold';
+		src: url('../../Assets/webfonts/NeueEinstellung-Bold.eot');
+		src: url('../../Assets/webfonts/NeueEinstellung-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../../Assets/webfonts/NeueEinstellung-Bold.woff') format('woff'),
+		url('../../Assets/webfonts/NeueEinstellung-Bold.ttf') format('truetype');
+
+	}
+
+	@font-face {
+		font-family: 'Neue Einstellung-Black';
+		src: url('../../Assets/webfonts/NeueEinstellung-Black.eot');
+		src: url('../../Assets/webfonts/NeueEinstellung-Black.eot?#iefix') format('embedded-opentype'),
+		url('../../Assets/webfonts/NeueEinstellung-Black.woff') format('woff'),
+		url('../../Assets/webfonts/NeueEinstellung-Black.ttf') format('truetype');
+
+	}
+
+	@font-face {
+		font-family: 'Neue Einstellung-SemiBold';
+		src: url('../../Assets/webfonts/NeueEinstellung-SemiBold.eot');
+		src: url('../../Assets/webfonts/NeueEinstellung-SemiBold.eot?#iefix') format('embedded-opentype'),
+		url('../../Assets/webfonts/NeueEinstellung-SemiBold.woff') format('woff'),
+		url('../../Assets/webfonts/NeueEinstellung-SemiBold.ttf') format('truetype');
+
+	}
+
+	@font-face {
+		font-family: 'Neue Einstellung-Light';
+		src: url('../../Assets/webfonts/NeueEinstellung-Light.eot');
+		src: url('../../Assets/webfonts/NeueEinstellung-Light.eot?#iefix') format('embedded-opentype'),
+		url('../../Assets/webfonts/NeueEinstellung-Light.woff') format('woff'),
+		url('../../Assets/webfonts/NeueEinstellung-Light.ttf') format('truetype');
+
+	}
+
+	@font-face {
+		font-family: 'Neue Einstellung-Regular';
+		src: url('../../Assets/webfonts/NeueEinstellung-Regular.eot');
+		src: url('../../Assets/webfonts/NeueEinstellung-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../../Assets/webfonts/NeueEinstellung-Regular.woff') format('woff'),
+		url('../../Assets/webfonts/NeueEinstellung-Regular.ttf') format('truetype');
+
+	}
+
+	@font-face {
+		font-family: 'Neue Einstellung-ExtraBold';
+		src: url('../../Assets/webfonts/NeueEinstellung-ExtraBold.eot');
+		src: url('../../Assets/webfonts/NeueEinstellung-ExtraBold.eot?#iefix') format('embedded-opentype'),
+		url('../../Assets/webfonts/NeueEinstellung-ExtraBold.woff') format('woff'),
+		url('../../Assets/webfonts/NeueEinstellung-ExtraBold.ttf') format('truetype');
+
+	}

@@ -1,9 +1,14 @@
 {
   "presets": [
+    "env",
   	"react",
-    "env"
+    "es2015",
+    "stage-2"
   ],
   "plugins": [
-    "transform-react-jsx-img-import"
+    "transform-react-jsx-img-import",
+    "transform-class-properties",
+    "transform-flow-strip-types"
   ]
+
 }
